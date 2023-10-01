@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.container input{
+    width: 300px;
+    height: 35px;
+    padding-inline: 10px;
+    outline: 0;
+    border: 2px solid green;
+    border-radius: 5px;
+    font-style: italic;
+
+}
+
+.container input::placeholder{
+    color: blue;
+}
+
+.content{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 35px;
+    padding-inline: 2%;
+}
+
+/* .content div{
+    position: relative;
+    margin-bottom: 10px;
+    margin-inline: 10px;
+    
+} */
+
+/* .content #deleteBtn{
+    position: absolute;
+    right: 10px;
+    left: 10px;
+} */
+
+body{
+    background-color: burlywood;
+}
+
+.content div {
+    position: relative;
+    margin-bottom: 10px;
+    margin-inline: 10px;
+    
+    display: flex;
+    flex-direction: column-reverse;
+    border-radius: 10px 40px;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px grey;
+    transition: 0.5s all;
+  }
+  .content div:hover{
+    transform: scale(1.1);
+  }
+
+  .content #deleteBtn {
+    position: absolute;
+    bottom: 10px; 
+    right: 10px; 
+   
+    width: 50px;
+    height: 30px;
+    font-size: 16px;
+    padding: 0;
+    background-color: bisque;
+    border: none;
+    border-radius: 5px;
+    color: cadetblue;
+  }
+
+  .content #deleteBtn:hover{
+transform: scale(0.9);
+  }
